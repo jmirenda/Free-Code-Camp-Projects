@@ -1,0 +1,50 @@
+<!dDOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Survey Form</title> 
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">We Want To Know How You Feel</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Enter Your First Name<input id="name" type="text" placeholder="Full Name" required></label>
+      <label id="email-label">Enter Your Email<input id="email" type="email" placeholder="Valid Email" required></label>
+      <label id="number-label">Enter Your Age<input id="number" type="number" min="13" max="120" placeholder="Enter Your Age" required></label>
+    </fieldset>
+    <fieldset>
+      <label>How Did You Join?
+        <select id="dropdown">
+          <option>Reference</option>
+          <option>Online Search</option>
+          <option>Walk In</option>
+          <option>Social Media</option>
+        </select>
+      </label>
+      <label><input type="radio" name="group1" class="inline" value="upgrade">Upgrade</label>
+      <label><input type="radio" name="group1" class="inline" value="downgrade">Downgrade</label>
+      <label><input type="radio" name="group1" class="inline" value="leaving">Leaving<label>
+      <label>How Likely Are You To Reccomend Us?
+        <select id="dropdown">
+          <option>Highly Likely</option>
+          <option>Potentially</option>
+          <option>Not Likely</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>How Can We Add More Value In The Future
+      <label><input type="checkbox" name="suggesstions" class="inline" value="suggesstions">Taking Suggestions</label>
+      <label><input type="checkbox" name="classes" class="inline" value="classes">Holding More Classes</label>
+      <label><input type="checkbox" name="group-discussions" class="inline" value="group">Group Discussions</label>
+      <label><input type="checkbox" name="social-media" class="inline" value="social">Social Media</label>
+      <label>Share Your Experience:
+        <textarea name="experience" rows="3" cols="30" placeholder="We Love Your Feedback"></textarea>
+        </label>
+    </fieldset>
+    <input id="submit" type="submit" value="submit">
+</form>
+</body>
+</html>
